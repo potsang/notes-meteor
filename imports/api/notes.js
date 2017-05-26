@@ -65,7 +65,7 @@ Meteor.methods({
       userId: this.userId
     }, {
       $set: {
-        updateAt: moment().valueOf(),
+        updatedAt: moment().valueOf(),
         ...updates
       }
     });
