@@ -9,14 +9,14 @@ if (Meteor.isServer) {
       _id: 'testNoteId1',
       title: 'My Title',
       body: 'My body for note',
-      updateAt: 0,
+      updatedAt: 0,
       userId: 'testUserId1'
     };
     const noteTwo = {
       _id: 'testNoteId2',
       title: 'Things To Buy',
       body: 'Couch',
-      updateAt: 0,
+      updatedAt: 0,
       userId: 'testUserId2'
     };
 
@@ -66,7 +66,7 @@ if (Meteor.isServer) {
       ]);
 
       const note = Notes.findOne(noteOne._id);
-      expect(note.updateAt).toBeGreaterThan(0);
+      expect(note.updatedAt).toBeGreaterThan(0);
       expect(note).toInclude({
         title,
         body: noteOne.body
