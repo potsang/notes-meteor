@@ -19,5 +19,5 @@ meteor
 Running the tests is easy. All you have to do is run the following command and view the reporter at localhost port 3000.
 
 ```
-npmtest
+npm test
 ```
